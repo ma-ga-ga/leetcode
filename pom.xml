@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wheat.leetcode</groupId>
+    <artifactId>leetcode</artifactId>
+    <packaging>pom</packaging>
+    <version>${reversion}</version>
+
+    <properties>
+        <reversion>1.0.0</reversion>
+    </properties>
+    <modules>
+        <module>solution</module>
+        <module>common</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.wheat.leetcode</groupId>
+                <artifactId>common</artifactId>
+                <version>${reversion}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

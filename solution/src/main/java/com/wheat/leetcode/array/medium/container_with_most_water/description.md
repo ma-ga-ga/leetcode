@@ -4,7 +4,7 @@ Given n non-negative integers `a1, a2, ..., an` , where each represents a point 
 
 说明：你不能倾斜容器，且 n 的值至少为 2。
 
-![示例图](http://github.com/ma-ga-ga/leetcode/solution/src/main/resources/images/question_11.jpg)
+![示例图](https://github.com/ma-ga-ga/leetcode/blob/master/solution/src/main/resources/images/question_11.jpg)
 
 图中垂直线代表输入数组 `[1,8,6,2,5,4,8,3,7]`。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。
 

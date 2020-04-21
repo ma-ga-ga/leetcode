@@ -3,18 +3,18 @@ package com.wheat.leetcode.array.medium.container_with_most_water;
 public class Solution_1 {
 
     public static int maxArea(int[] height) {
-        int l = 0, r = height.length - 1;
-        int ans = 0;
-        while (l < r) {
-            int area = Math.min(height[l], height[r]) * (r - l);
-            ans = Math.max(ans, area);
-            if (height[l] <= height[r]) {
-                ++l;
+        int left = 0, right = height.length - 1;
+        int maxArea = 0;
+        while (left < right) {
+            int area = Math.min(height[left], height[right]) * (right - left);
+            maxArea = Math.max(maxArea, area);
+            if (height[left] <= height[right]) {
+                ++left;
             }
             else {
-                --r;
+                --right;
             }
         }
-        return ans;
+        return maxArea;
     }
 }

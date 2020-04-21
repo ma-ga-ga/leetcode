@@ -19,6 +19,12 @@ maxArea = (right - left) * Math.min(height[left], height[right])
 
 直到左右指针相遇，返回最大的面积。
 
+时间复杂度为 `O(n)`。
+
+> Runtime: 2 ms, faster than 94.80% of Java online submissions for Container With Most Water.
+>
+>Memory Usage: 39.9 MB, less than 94.87% of Java online submissions for Container With Most Water.
+
 # solution2
 
 解法一通过缩短长度以增加高度去发现更大的面积。
@@ -34,3 +40,9 @@ maxArea = (right - left) * Math.min(height[left], height[right])
 当数组的分布呈驼峰型时，每一次都需要计算面积，所以与第一种方式计算面积的次数一致。
 
 该方式通过增加额外的变量及更多的比较次数尝试去减少乘法的次数(因为目前的 `CPU` 乘法的代价更高)。
+
+时间复杂度为 `O(n)`。
+
+>Runtime: 1 ms, faster than 100.00% of Java online submissions for Container With Most Water.
+>
+>Memory Usage: 39.8 MB, less than 94.87% of Java online submissions for Container With Most Water.

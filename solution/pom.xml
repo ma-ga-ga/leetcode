@@ -4,6 +4,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <artifactId>leetcode</artifactId>
+    <groupId>com.wheat.leetcode</groupId>
+    <version>${reversion}</version>
+  </parent>
+
   <groupId>com.wheat.leetcode</groupId>
   <artifactId>solution</artifactId>
   <version>${reversion}</version>
@@ -11,6 +17,10 @@
   <name>solution</name>
 
   <dependencies>
+    <dependency>
+      <groupId>com.wheat.leetcode</groupId>
+      <artifactId>common</artifactId>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

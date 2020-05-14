@@ -42,7 +42,6 @@ public class Solution_1 {
                     return result;
                 }
                 i++;
-
             }
         }
 

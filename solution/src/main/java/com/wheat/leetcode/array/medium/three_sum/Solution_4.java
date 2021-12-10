@@ -16,9 +16,9 @@ public class Solution_4 {
 
         Arrays.sort(nums);
 
-        int scope  = nums.length - 2;
+        int scope = nums.length - 2;
 
-        for (int i = 0; i < scope;) {
+        for (int i = 0; i < scope; ) {
 
             int current = nums[i];
 
@@ -26,11 +26,11 @@ public class Solution_4 {
                 break;
             }
 
-            if((nums[i]+nums[i+1]+nums[i+2]) > 0){
+            if ((nums[i] + nums[i + 1] + nums[i + 2]) > 0) {
                 break;
             }
 
-            if((nums[i]+nums[scope]+nums[scope + 1]) < 0){
+            if ((nums[i] + nums[scope] + nums[scope + 1]) < 0) {
                 i++;
                 while (nums[i - 1] == nums[i]) {
                     if (i > scope) {
@@ -40,7 +40,7 @@ public class Solution_4 {
                 }
                 continue;
             }
-            int l = ++i , r = nums.length - 1;
+            int l = ++i, r = nums.length - 1;
             while (l < r) {
                 int sum = current + nums[l] + nums[r];
                 if (sum == 0) {
@@ -49,8 +49,10 @@ public class Solution_4 {
                     list.add(nums[l]);
                     list.add(nums[r]);
                     result.add(list);
-                    while (l < r && nums[l] == nums[++l]) { }
-                    while (l < r && nums[r] == nums[--r]) { }
+                    while (l < r && nums[l] == nums[++l]) {
+                    }
+                    while (l < r && nums[r] == nums[--r]) {
+                    }
                 } else if (sum > 0) {
                     r -= 1;
                 } else {
